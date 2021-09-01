@@ -723,7 +723,7 @@ public class Series extends Configurable<Series> {
                     final boolean animationFlag = animation != null;
                     if (point == null || (point.isSingleValue() && point.getY() == null)) {
                         nativeAddPoint(nativeSeries, null, redraw, shift, animationFlag);
-                    } else if (point.isSingleValue() && !chart.isPersistent() && !point.hasNativeProperties()) {
+                    } else if (point.isSingleValue() && !point.hasNativeProperties()) {
                         nativeAddPoint(nativeSeries, point.getY().doubleValue(), redraw, shift, animationFlag);
                     } else {
                         nativeAddPoint(nativeSeries, convertPointToJavaScriptObject(point), redraw, shift, animationFlag);
@@ -732,7 +732,7 @@ public class Series extends Configurable<Series> {
                     final JavaScriptObject animationOptions = animation.getOptions().getJavaScriptObject();
                     if (point == null || (point.isSingleValue() && point.getY() == null)) {
                         nativeAddPoint(nativeSeries, null, redraw, shift, animationOptions);
-                    } else if (point.isSingleValue() && !chart.isPersistent() && !point.hasNativeProperties()) {
+                    } else if (point.isSingleValue() && !point.hasNativeProperties()) {
                         nativeAddPoint(nativeSeries, point.getY().doubleValue(), redraw, shift, animationOptions);
                     } else {
                         nativeAddPoint(nativeSeries, convertPointToJavaScriptObject(point), redraw, shift, animationOptions);
