@@ -3,7 +3,8 @@
 This is our fork of the Moxxie highcharts library. 
 
 # Publishing a Version
-To publish packages to here update the version number in the pom.xml and run mvn deploy (you need to have your git auth key stored in the ~/.m2/settings.xml as per https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-apache-maven-registry (use the owner cronometersoftware no caps).
+To publish packages to here update the version number in the pom.xml and run `mvn deploy`
+You need to have your git auth key stored in the ~/.m2/settings.xml as per https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-apache-maven-registry (use the owner cronometersoftware no caps).
 
 # Updating main cronometer project 
 Download the published jar file and replace the existing one in war/lib/. Update pom file to point to new file. 
