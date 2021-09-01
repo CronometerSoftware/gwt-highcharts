@@ -17,7 +17,7 @@
   </properties>
 
   <modules>
-    <module>org.moxieapps.gwt.highcharts</module>
+    <module>com.cronometer.gwt.highcharts</module>
   </modules>
 
 </project>
