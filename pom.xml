@@ -4,7 +4,7 @@
 
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>org.moxieapps</groupId>
+  <groupId>com.cronometer</groupId>
   <artifactId>root</artifactId>
   <version>1.0.0-SNAPSHOT</version>
   <packaging>pom</packaging>
@@ -18,7 +18,6 @@
 
   <modules>
     <module>org.moxieapps.gwt.highcharts</module>
-    <module>org.moxieapps.gwt.highcharts.showcase</module>
   </modules>
 
 </project>

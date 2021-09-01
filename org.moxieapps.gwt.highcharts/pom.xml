@@ -3,14 +3,21 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.moxieapps</groupId>
+    <groupId>com.cronometer</groupId>
     <artifactId>gwt-highcharts</artifactId>
-    <version>1.7.0</version>
+    <version>2.0.0</version>
     <packaging>bundle</packaging>
 
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub cronometersoftware Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/cronometersoftware/gwt-highcharts</url>
+        </repository>
+    </distributionManagement>
 
-    <name>Moxie Apps GWT Highcharts</name>
-    <url>http://www.moxiegroup.com/</url>
+    <name>Cronometer fork of Moxie Apps GWT Highcharts</name>
+    <url>http://www.cronometer.com/</url>
 
     <dependencies>
 
@@ -25,7 +32,7 @@
 
 
     <build>
-        <finalName>org.moxieapps.gwt.highcharts-${project.version}</finalName>
+        <finalName>com.cronometer.gwt.highcharts-${project.version}</finalName>
 
         <!-- GWT needs the source code in the output bundle -->
         <resources>
