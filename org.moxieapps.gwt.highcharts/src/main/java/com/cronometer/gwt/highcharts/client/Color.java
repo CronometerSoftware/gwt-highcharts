@@ -20,6 +20,9 @@ import com.google.gwt.json.client.JSONArray;
 import com.google.gwt.json.client.JSONNumber;
 import com.google.gwt.json.client.JSONString;
 import com.google.gwt.json.client.JSONValue;
+import com.google.gwt.json.client.JSONObject;
+
+import com.cronometer.gwt.highcharts.client.PatternFill;
 
 /**
  * Represents a color as either a solid RGB color, an RBG color with an alpha channel,
@@ -326,6 +329,10 @@ public class Color extends Configurable<Color> {
                 .setOption("y2", new JSONString(((Double) (y2 * 100)).intValue() + "%"));
         }
 
+    }
+
+    public Color setPatternFill(PatternFill patternFill) {
+        return this.setOption("pattern", patternFill.getPatternObject());
     }
 
 }
