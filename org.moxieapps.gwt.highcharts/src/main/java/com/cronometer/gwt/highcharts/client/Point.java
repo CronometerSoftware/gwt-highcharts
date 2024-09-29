@@ -369,6 +369,10 @@ public class Point extends Configurable<Point> {
         return this.setOption("color", color);
     }
 
+    public Point setColor(Color color) {
+         return this.setOption("color", color != null ? color.getOptionValue() : null);
+    }
+
     /**
      * Convenience method for setting the 'drilldown' option of the point. Equivalent to:
      * <pre><code>
